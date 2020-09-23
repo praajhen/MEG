@@ -1,10 +1,10 @@
-addpath('C:\MyTemp\Natalias project\Trigger program'); %Trigger programs
-addpath('C:\MyTemp\fieldtrip-20160110'); ft_defaults; %FieldTrip program
+addpath('path of this program with sub functions'); %Trigger programs
+addpath('fieldtrip directory'); ft_defaults; %FieldTrip program
 
-subjectdata.datadir       = 'C:\MyTemp\Natalias project\MEG data';
-subjectdata.logdir       = 'C:\MyTemp\Natalias project\log file';
-subjectdata.besadir       = 'C:\MyTemp\Natalias project\besa event';
-subjectdata.outputdir = 'C:\MyTemp\Natalias project\Output';
+subjectdata.datadir       = 'MEG data directory';
+subjectdata.logdir       = 'log file directory from MEG dta';
+subjectdata.besadir       = 'besa event file';
+subjectdata.outputdir = 'Output directory';
 subjectdata.dataname         =  {'file1.fif','file2.fif'};
 subjectdata.logfile = {'log1.txt','log2.txt','log3.txt'};
 subjectdata.besafile= {'besa1.evt','besa2.evt'};
@@ -22,7 +22,7 @@ value= {event(:).value}';
 sample= {event(:).sample}';
 
 %load the sound file timing
-load('C:\MyTemp\Natalias project\324 sound files timing_Hän on &jä');
+load('sound files directory');
 
 % To take only specific triggers sample
 trl = [];
